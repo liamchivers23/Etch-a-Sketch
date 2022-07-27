@@ -2,8 +2,7 @@ const container = document.querySelector('.sketch-container')
 const changeGrid = document.querySelector('.grid-change-btn')
 
 
-
-function createGrid(size){
+function createGrid(size = 64){
 
     container.style.gridTemplateRows = `repeat(${size}, auto)`;
     container.style.gridTemplateColumns = `repeat(${size}, auto)`;
@@ -12,13 +11,19 @@ function createGrid(size){
 
         const divs = document.createElement('div')
         container.append(divs)
-        divs.style.border = '1px solid black'
 
+        divs.style.border = '1px solid black'
 
         divs.addEventListener('mouseover', (e) => {
             e.target.style.backgroundColor = 'black'
         })
+        
     }
-  
 }
-createGrid(90)
+createGrid()
+
+changeGrid.addEventListener('click', () => {
+    container.textContent = ''
+    const gridSquares = Number(prompt('enter a number of squares per side for the new grid.'))
+    createGrid(gridSquares)
+})
