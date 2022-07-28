@@ -24,6 +24,6 @@ createGrid()
 
 changeGrid.addEventListener('click', () => {
     container.textContent = ''
-    const gridSquares = Number(prompt('enter a number of squares per side for the new grid.'))
+    const gridSquares = Math.floor(Math.abs(Number(prompt('enter a number of squares per side for the new grid.'))))
     createGrid(gridSquares)
 })
