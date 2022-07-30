@@ -2,16 +2,6 @@ const container = document.querySelector('.sketch-container')
 const changeGrid = document.querySelector('.grid-change-btn')
 const toggleGrid = document.querySelector('.toggleGrid')
 
-
-
-function getRandColor(){
-    const r = Math.floor(Math.random() * 255) 
-    const g = Math.floor(Math.random() * 255) 
-    const b = Math.floor(Math.random() * 255) 
-
-    return `rgb(${r}, ${g}, ${b})`
-}
-
 function createGrid(size = 64){
     container.style.gridTemplateRows = `repeat(${size}, auto)`;
     container.style.gridTemplateColumns = `repeat(${size}, auto)`;
