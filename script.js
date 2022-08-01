@@ -9,15 +9,14 @@ function createGrid(size = 64){
     for(let i = 0; i < size*size; i++){
         const divs = document.createElement('div')
         container.append(divs)
-
-        divs.style.border = '1px solid black'
+      divs.classList.add('divs-border')
 
         divs.addEventListener('mouseover', (e) => {
             e.target.style.backgroundColor = 'black'
         })
 
         toggleGrid.addEventListener('click', () => {
-            divs.style.border = 'none'
+            divs.classList.toggle('divs-border')
         })
     }
 }
