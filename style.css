@@ -20,6 +20,10 @@
     padding: 2rem;
 }
 
+.divs-border{
+  border: 1px solid black;
+}
+
 .container h2 {
     padding: 1rem;
 }
