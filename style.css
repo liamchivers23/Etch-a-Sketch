@@ -1,63 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
-*, ::before, ::after {
-    margin: 0;
-    box-sizing: border-box;
-    padding: 0;
-    font-family: 'Press Start 2P', sans-serif;
+*,
+::before,
+::after {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Press Start 2P", sans-serif;
 }
 
 .header-main {
-    text-align: center;
-    background-color: lightskyblue;
-    padding: 1rem;
+  text-align: center;
+  background-color: lightskyblue;
+  padding: 1rem;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
 }
 
-.divs-border{
+.divs-border {
   border: 1px solid black;
 }
 
 .container h2 {
-    padding: 1rem;
+  padding: 1rem;
 }
 
-
 .sketch-container {
-    width: 700px;
-    height: 700px;
-    display: grid;
-    border: 10px solid lightskyblue;
+  width: 700px;
+  height: 700px;
+  display: grid;
+  border: 10px solid lightskyblue;
 }
 
 .buttons {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .grid-change-btn {
-    padding: 1rem;
-    border-radius: 1rem;
-    cursor: pointer;
-    background-color: lightskyblue;
-    text-transform: capitalize;
+  padding: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  background-color: lightskyblue;
+  text-transform: capitalize;
 }
 
 .toggleGrid {
-    padding: 1rem;
-    border-radius: 1rem;
-    cursor: pointer;
-    background-color: lightskyblue;
-    text-transform: capitalize;
+  padding: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  background-color: lightskyblue;
+  text-transform: capitalize;
 }
 
 .footer-info {
-    text-align: center;
-    padding-top: 2rem;
-    color: black;
+  text-align: center;
+  padding-top: 2rem;
+  color: black;
 }
