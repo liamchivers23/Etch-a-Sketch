@@ -1,6 +1,7 @@
 const container = document.querySelector(".sketch-container");
 const changeGrid = document.querySelector(".grid-change-btn");
 const toggleGrid = document.querySelector(".toggleGrid");
+const restartButton = document.querySelector(".restartButton");
 
 function createGrid(size = 64) {
   container.style.gridTemplateRows = `repeat(${size}, auto)`;
@@ -21,6 +22,11 @@ function createGrid(size = 64) {
   }
 }
 createGrid();
+
+restartButton.addEventListener("click", () => {
+  container.textContent = "";
+  createGrid();
+});
 
 changeGrid.addEventListener("click", () => {
   container.textContent = "";
